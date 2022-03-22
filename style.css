@@ -38,9 +38,47 @@
 .search-bar {
     width: 100%;
     max-width: 43.75rem;
-    background: rgb(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     border-radius: 3.75rem;
     padding: 0.625rem 1.25rem;
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    backdrop-filter: blur(4px) saturate(180%);
+
+    /* backdrop-filter alternative for Firefox */
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 1.5rem 1.25rem;
+    font-size: 1.25rem;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.search-bar button img {
+    width: 1.5625rem;
+
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+
+    /* default color */
+    /* background-color: #58629b; */
+
+    /* Firefox color */
+    background-color: #7882bb;
+    cursor: pointer;
+    padding: 1.125rem;
 }
