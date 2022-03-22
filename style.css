@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url(images/bailey-zindel-NRQV-hBF10M-unsplash.jpg);
+    background-position: center;
+    background-size: covers;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title,
+.resources,
+.resources a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    color: plum;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 43.75rem;
+    background: rgb(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 3.75rem;
+    padding: 0.625rem 1.25rem;
+}
