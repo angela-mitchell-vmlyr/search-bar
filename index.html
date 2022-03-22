@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -18,23 +20,13 @@
                 <img src="images/icons8-search-50.png" alt="filled search icon">
             </button>
         </div>
-        <div class="user-cards">
-            <article class="card">
-                <h2>Angela Mitchell</h2>
-                <span class="email">angela.mitchell@vmlyr.com</span>
-            </article>
-            <article class="card">
-                <h2>Angela Mitchell</h2>
-                <span class="email">angela.mitchell@vmlyr.com</span>
-            </article>
-            <article class="card">
-                <h2>Angela Mitchell</h2>
-                <span class="email">angela.mitchell@vmlyr.com</span>
-            </article>
-            <article class="card">
-                <h2>Angela Mitchell</h2>
-                <span class="email">angela.mitchell@vmlyr.com</span>
-            </article>
+        <div class="user-cards" data-user-cards-container>
+            <template data-user-template>
+                <article class="card">
+                    <h2 data-name></h2>
+                    <span data-email class="email"></span>
+                </article>
+            </template>
         </div>
         <div class="resources">
             <span>Tutorial by <a href="https://www.youtube.com/watch?v=9hnJsNIBq1g">Easy Tutorials</a></span>
